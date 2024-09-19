@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body class="dark:bg-black dark:text-white">
+    <!-- our main container goes here  -->
+    <div class="main-container">
+      <div class="w-[90%] m-auto sm:w-[90%] sm:m-auto">
+           <!-- Navbar -->
+    <div class="navbar-container p-2 bg-primary-color flex justify-between items-center">
+        <!-- logo  -->
+        <div class="logo">
+            <h1 class="font-bold text-2xl">&ltSS/&gt</h1>
+        </div>
+        <!-- nav-items  -->
+        <div class="hidden md:flex md:items-center md:space-x-6 nav-items text-black lg:space-x-10 dark:text-white">
+            <a href="#" class="">Home</a>
+            <a href="#" class="">Product</a>
+            <a href="#" class="">Promo</a>
+            <a href="#" class="">About</a>
+            <a href="#" class="">Contact</a>
+            <div class="flex justify-between w-[130px]">
+                    <div class=" flex items-center">
+                        <p class="moon flex cursor-pointer">
+                            <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z" class="fill-sky-400/20"></path><path d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z" class="fill-sky-500"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z" class="fill-sky-500"></path></svg>
+                        </p>
+                        <p class="sun flex cursor-pointer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mr-2"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="stroke-slate-400 dark:stroke-slate-500"></path><path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-slate-400 dark:stroke-slate-500"></path></svg>
+                        </p>
+                    </div>
+
+                    <button class="dark:bg-white dark:text-black ps-3 pr-3 pt-1 pb-1 rounded-md bg-black text-white">Download</button>
+            </div>
+           
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div id="menu-btn" class="font-bold text-2xl block hamburger md:hidden focus:outline-none">
+          &#9776;
+        </div>
+    </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu"
+                class="text-black absolute flex-col items-center hidden self-end py-8 space-y-6 font-bold bg-white left-6 right-6">
+                <a href="#" class="hover:text-secondary-color">Home</a>
+                <a href="#" class="hover:text-secondary-color">Product</a>
+                <a href="#" class="hover:text-secondary-color">Promo</a>
+                <a href="#" class="hover:text-secondary-color">About</a>
+                <a href="#" class="hover:text-secondary-color">Contact</a>
+                <div class="flex">
+                    <img src="images/Icon cv.png" alt="">
+                    <button>Download</button>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- our header ends here  -->
+
+            <!-- our hero section goes here  -->
+            <div class="sm:w-[100%] pt-10 grid grid-cols-1 sm:grid-cols-12">
+                <div class="sm:w-[80%] order-2 sm:order-1 sm:col-span-9">
+                    <div class="">
+                    <h1 class="text-4xl font-bold pb-3">Hi, I’m Saddam 👋</h1>
+                    <p class="">
+                        I'm a full stack developer (React.js & Node.js) with a focus on
+                        creating (and occasionally designing) exceptional digital
+                        experiences that are fast, accessible, visually appealing, and
+                        responsive. Even though I have been creating web applications
+                        for over 7 years, I still love it as if it was something new.
+                    </p>
+                    <div class="pt-5 pb-5">
+                        <p class="flex pb-4">
+                        <img class="pr-5" src="images/location.png" alt="" /> Swabi,
+                        Pakistan
+                        </p>
+                        <p class="flex">
+                        <img class="pr-5" src="images/Icon dot.png" alt="" />
+                        Available for new projects
+                        </p>
+                    </div>
+                    <div class="flex">
+                        <a href="#"><img src="images/Icon 1.png" alt="" /></a>
+                        <a href="#"><img src="images/Icon 2.png" alt="" /></a>
+                        <a href="#"><img src="images/Icon 3.png" alt="" /></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="sm:col-span-3 order-1 sm:order-2 w-[70%] m-auto sm:mt-[-10px] sm:w-[100%]">
+                    <img class="w-full" src="images/Pic Container.png" alt="" />
+                </div>
+            </div>
+            <!-- our hero section ends here  -->
+      </div>
+      <!-- our about section goes here  -->
+      <div class="mt-20 pt-20 pb-32 bg-[#F9FAFB] dark:bg-slate-900">
+                     <div class="pb-5 text-center">
+                          <div class="dark:bg-slate-500 ps-4 pr-4 pb-1 pt-1 rounded-xl bg-[#D1D5DB] inline-block mx-auto">
+                            <p class="">About me</p>
+                          </div>
+                    </div>
+            <div class=" grid lg:gap-20 grid-cols-1 md:grid-cols-12 ">
+                    <div class="sm:col-span-5">
+                    <img class="w-[50%] m-auto md:w-[80%]" src="images/Pic Container2.png" alt="" />
+                    </div>
+                    <div class="w-[90%] m-auto lg:w-[90%] sm:col-span-7">
+                        <h1 class="font-bold text-3xl pb-5">
+                            Curious about me? Here you have it:
+                        </h1>
+                        <p class="pb-2">
+                            I'm a passionate, self-proclaimed designer who specializes in full
+                            stack development (React.js & Node.js). I am very enthusiastic about
+                            bringing the technical and visual aspects of digital products to
+                            life. User experience, pixel perfect design, and writing clear,
+                            readable, highly performant code matters to me.
+                        </p>
+                        <p class="pb-2">
+                            I began my journey as a web developer in 2015, and since then, I've
+                            continued to grow and evolve as a developer, taking on new
+                            challenges and learning the latest technologies along the way. Now,
+                            in my early thirties, 7 years after starting my web development
+                            journey, I'm building cutting-edge web applications using modern
+                            technologies such as Next.js, TypeScript, Nestjs, Tailwindcss,
+                            Supabase and much more.
+                        </p>
+                        <p class="pb-2">
+                            I am very much a progressive thinker and enjoy working on products
+                            end to end, from ideation all the way to development.
+                        </p>
+                        <p class="pb-2">
+                            When I'm not in full-on developer mode, you can find me hovering
+                            around on twitter or on indie hacker, witnessing the journey of
+                            early startups or enjoying some free time. You can follow me on
+                            Twitter where I share tech-related bites and build in public, or you
+                            can follow me on GitHub.
+                        </p>
+                        <div class="">
+                            <p class="pb-2">Finally, some quick bits about me.</p>
+                            <ol
+                            class="w-[90%] m-auto list-disc grid justify-between grid-cols-12"
+                            >
+                            <li class="col-span-6">B.E. in Computer Engineering</li>
+                            <li class="mx-10 col-span-6">Avid learner</li>
+                            <li class="col-span-6">Full time freelancer</li>
+                            <li class="mx-10 col-span-6">Aspiring indie hacker</li>
+                            </ol>
+                            <p class="pt-2">
+                            One last thing, I'm available for freelance work, so feel free to
+                            reach out and say hello! I promise I don't bite 😉
+                            </p>
+                        </div>
+                    </div>
+            </div>
+      </div>
+      <!-- our about section ends here  -->
+
+      <!-- our skills section goes here  -->
+      <div class="pt-20 pb-10 dark:bg-black">
+            <div class="pb-5 text-center">
+                <div class="dark:bg-slate-500 ps-4 pr-4 rounded-xl bg-[#D1D5DB] inline-block mx-auto">
+                <p class="">Skills</p>
+                </div>
+            </div>
+            <div class="pt-1 w-[90%] m-auto grid sm:grid-cols-12"></div>
+                <div class="pb-10 col-span-12 text-center">
+                    <p class="">The skills , tools technologies i am really good at:</p>
+                </div>
+                <div class="pb-12 grid grid-cols-4 sm:grid-cols-8 gap-3 sm:gap-1 w-[90%] m-auto sm:w-[90%] sm:m-auto md:w-[90%] lg:m-auto">
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-javscript.svg" alt="">JavaScript</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-typescript.svg" alt="">TypeScript</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-react.svg" alt="">React</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-nextjs.svg" alt="">Next.js</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-nodejs.svg" alt="">Node.js</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-express.svg" alt="">Express.js</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-nest.svg" alt="">Nest.js</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/Vector.png" alt="">Socket.io</div>
+                </div>
+
+                <div class="grid grid-cols-4 sm:grid-cols-8 gap-3 sm:gap-1 w-[90%] m-auto sm:w-[90%] sm:m-auto md:w-[90%] lg:m-auto">
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-postgresql.svg" alt="">Postgresql</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[25%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-mongodb.svg" alt="">Mongodb</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-sass.svg" alt="">Sass/Scss</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[70%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-tailwindcss.svg" alt="">Tailwindcss</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[33%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-figma.svg" alt="">Figma</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-cypress.svg" alt="">Cypress</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-storybook.svg" alt="">Storybook</div>
+                    <div class="md:w-[100%] md:text-[15px] sm:w-[50%] sm:text-[10px] flex flex-col items-center"><img src="images/icon-git.svg" alt="">Git</div>
+                </div>
+            </div>
+     </div>
+      <!-- our skills section ends here  -->
+
+      <!-- our experience section goes here  -->
+      <div class="">
+        <div class="grid sm:grid-cols-12 pb-20 pt-20 bg-[#F9FAFB] dark:bg-slate-900">
+          <!-- card-1  -->
+          <div class="col-span-12 text-center dark:text-white">
+                <div class="pb-5 text-center">
+                    <div class="dark:bg-slate-500 ps-4 pr-4 pb-1 pt-1 rounded-xl bg-[#D1D5DB] inline-block mx-auto">
+                    <p class="">Experience</p>
+                    </div>
+                </div>
+                <p class="pb-10 pt-5">
+                Here is a quick summary of my most recent experiences:
+                </p>
+          </div>
+          <div class=" dark:bg-slate-800 dark:border-0 mb-5 w-[90%] md:w-[80%] lg:w-[60%] m-auto col-span-12 flex justify-between flex-col sm:flex-row pr-5 sm:pr-0 ps-8 pt-8 pb-8 border border-gray-200 rounded-lg shadow-lg bg-white">
+                <div class="sm:w-[15%] sm:order-1">
+                    <img src="images/logo-upwork.png" alt="">
+                </div>
+                <div class="sm:w-[50%] order-3 sm:order-2">
+                    <h1 class="pb-5 sm:text-2xl font-bold">Sr. Frontend Developer</h1>
+                    <ol class="list-disc w-[85%] m-auto sm:w-[100%]">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                        <li>Sed quis justo ac magna.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ol>
+                </div>
+                <div class="lg:w-[25%] md:w-[30%] pr-6 md:pr-0 order-2 sm:order-3 mt-3 mb-3 sm:mt-0 sm:mb-0">Nov 2021 - Present</div>
+          </div>
+          <!-- card-2  -->
+          <div class="dark:bg-slate-800 dark:border-0 w-[90%] mb-5 md:w-[80%] lg:w-[60%] m-auto col-span-12 flex justify-between flex-col sm:flex-row pr-5 sm:pr-0 ps-8  pt-8 pb-8 border border-gray-200 rounded-lg shadow-lg bg-white">
+                <div class="sm:w-[15%] sm:order-1">
+                    <img src="images/logo-upwork.png" alt="">
+                </div>
+                <div class="sm:w-[50%] order-3 sm:order-2">
+                    <h1 class="pb-5 sm:text-2xl font-bold">Team Lead</h1>
+                    <ol class="list-disc w-[85%] m-auto sm:w-[100%]">
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Ut pretium arcu et massa semper, id fringilla leo semper.</li>
+                        <li>Sed quis justo ac magna.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                    </ol>
+                </div>
+                <div class="lg:w-[25%] md:w-[30%] pr-6 md:pr-0 order-2 mt-3 mb-3 sm:mt-0 sm:mb-0 sm:order-3">Jul 2017 - Oct 2021</div>
+          </div>
+          <!-- card-3  -->
+          <div class="dark:bg-slate-800 dark:border-0 w-[90%] m-auto md:w-[80%] lg:w-[60%] lg:m-auto col-span-12 flex justify-between flex-col sm:flex-row pr-5 sm:pr-0 ps-8 pt-8 pb-8 border border-gray-200 rounded-lg shadow-lg bg-white">
+                <div class="sm:w-[15%] sm:order-1">
+                    <img src="images/logo-upwork.png" alt="">
+                </div>
+                <div class="sm:w-[50%] order-3 sm:order-2">
+                    <h1 class="pb-5 sm:text-2xl font-bold">Full Stack Developer</h1>
+                    <ol class="list-disc w-[85%] m-auto sm:w-[100%]">
+                        <li>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </li>
+                    </ol>
+                </div>
+                <div class="lg:w-[25%] md:w-[30%] pr-6 md:pr-0 order-2 mt-3 mb-3 sm:mt-0 sm:mb-0 sm:order-3 ">Dec 2015 - May 2017</div>
+          </div>
+        </div>
+      </div>
+      <!-- our experience section ends here  -->
+
+      <!-- our work section goes here  -->
+        <div class="p-5 sm:pt-20 sm:w-[90%] sm:m-auto">
+            <!-- card-1  -->
+            <div class="grid grid-cols-1 sm:grid-cols-12 pb-10 dark:bg-black">
+                <div class="sm:col-span-12 text-center">
+                    <div class="pb-2 text-center">
+                        <div class="dark:bg-slate-500 ps-4 pr-4 pb-1 pt-1 rounded-xl bg-[#D1D5DB] inline-block mx-auto">
+                        <p class="">Work</p>
+                        </div>
+                    </div>
+                        <p class="pt-3 pb-10">Some the noteworthy projects i have built:</p>
+                </div>
+                <div class=" dark:border-0 sm:col-span-12 flex-col md:flex-row sm:flex-col flex sm:justify-between border border-white rounded-lg shadow-lg">
+                    <div class="dark:bg-slate-900 w-[100%] md:w-[50%] sm:w-[100%] bg-[#F9FAFB] border-0 p-3 sm:p-10">
+                        <img src="images/work.png" alt="">
+                    </div>
+                    <div class="w-[90%] flex flex-col lg:items-center m-auto lg:h-[96%] sm:w-[90%] sm:m-auto md:w-[50%] ps-3 pr-3 lg:ps-0 lg:pr-0 md:ps-5 md:pr-5 pt-[35px] ">
+                            <div class="lg:w-[67%]">
+                                <h1 class="pb-4 sm:text-2xl font-bold">Fiskil</h1>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                            </div>
+                            <div class="mt-5">
+                                <div class="pb-3">
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">React</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Next.js</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Typescript</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Nest.js</span>
+                                </div>
+                                <div class="pb-3">
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">PostgreSQL</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Tailwindcss</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Figma</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Cypress</span>
+                                </div>
+                                <div class="pb-3">
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Storybook</span>
+                                    <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Git</span>
+                                </div>
+                                <div class=""><img src="images/work icon.png" alt=""></div>
+                            </div>
+                    </div>
+               </div>
+            </div>
+            <!-- card-2  -->
+            <div class="dark:bg-slate-800 dark:border-0 grid grid-cols-1 sm:grid-cols-12 mt-8 mb-8">
+                <div class=" dark:border-0 sm:col-span-12 flex-col md:flex-row sm:flex-col flex sm:justify-between border border-white rounded-lg shadow-lg">
+                     <div class="w-[90%] flex flex-col lg:items-center m-auto lg:h-[96%] sm:w-[90%] sm:m-auto md:w-[50%] ps-3 pr-3 lg:ps-0 lg:pr-0 md:ps-5 md:pr-5 pt-[35px] ">
+                             <div class="lg:w-[67%]">
+                                 <h1 class="pb-4 sm:text-2xl font-bold">Fiskil</h1>
+                                 <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                             </div>
+                             <div class="mt-5">
+                                 <div class="pb-3">
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">React</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Next.js</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Typescript</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Nest.js</span>
+                                 </div>
+                                 <div class="pb-3">
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">PostgreSQL</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Tailwindcss</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Figma</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Cypress</span>
+                                 </div>
+                                 <div class="pb-3">
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Storybook</span>
+                                     <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Git</span>
+                                 </div>
+                                 <div class=""><img src="images/work icon.png" alt=""></div>
+                             </div>
+                     </div>
+                        <div class="dark:bg-slate-900 w-[100%] md:w-[50%] sm:w-[100%] bg-[#F9FAFB] border-0 p-3 sm:p-10">
+                            <img src="images/work.png" alt="">
+                        </div>
+                </div>
+         </div>
+            <!-- card-3  -->
+            <div class="dark:bg-slate-800 dark:border-0 grid grid-cols-1 sm:grid-cols-12 mt-8 mb-8">
+                   <div class=" dark:border-0 sm:col-span-12 flex-col md:flex-row sm:flex-col flex sm:justify-between border border-white rounded-lg shadow-lg">
+                        <div class="dark:bg-slate-900 w-[100%] md:w-[50%] sm:w-[100%] bg-[#F9FAFB] border-0 p-3 sm:p-10">
+                            <img src="images/work.png" alt="">
+                        </div>
+                        <div class="w-[90%] flex flex-col lg:items-center m-auto lg:h-[96%] sm:w-[90%] sm:m-auto md:w-[50%] ps-3 pr-3 lg:ps-0 lg:pr-0 md:ps-5 md:pr-5 pt-[35px] ">
+                                <div class="lg:w-[67%]">
+                                    <h1 class="pb-4 sm:text-2xl font-bold">Fiskil</h1>
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                                </div>
+                                <div class="mt-5">
+                                    <div class="pb-3">
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">React</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Next.js</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Typescript</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Nest.js</span>
+                                    </div>
+                                    <div class="pb-3">
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">PostgreSQL</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Tailwindcss</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Figma</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Cypress</span>
+                                    </div>
+                                    <div class="pb-3">
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Storybook</span>
+                                        <span class="dark:bg-slate-500 text-center ps-5 pr-5 sm:ps-3 sm:pr-3 md:ps-5 md:pr-4 lg:ps-4 lg:pr-4 rounded-xl bg-[#D1D5DB]">Git</span>
+                                    </div>
+                                    <div class=""><img src="images/work icon.png" alt=""></div>
+                                </div>
+                        </div>
+                   </div>
+            </div>
+        </div>
+      <!-- our work section ends here  -->
+
+      <!-- our testimonial section goes here  -->
+        <div class="bg-[#F9FAFB] pt-20 pb-20 dark:bg-slate-900">
+            <div class="sm:w-[90%] sm:m-auto grid grid-cols-1 sm:grid-cols-12">
+                <div class="sm:col-span-12 text-center">
+                    <p class="dark:bg-slate-500 w-[25%] m-auto sm:w-[20%] sm:m-auto md:w-[10%] md:m-auto rounded-lg bg-[#D1D5DB]">Testimonials</p>
+                    <p class="pt-5 pb-8">Nice things people have said about me:</p>
+                </div>
+                 <div class="sm:col-span-12 flex flex-col md:flex-col lg:flex-row sm:justify-between">
+                    <!-- card-1  -->
+                    <div class="dark:bg-slate-800 flex flex-col justify-evenly dark:border-0 w-[90%] m-auto md:w-[90%] lg:w-[30%] lg:m-auto sm:col-span-12 border border-white bg-white rounded-md shadow-lg p-10 h-[100%]">
+                        <div class="flex justify-center"><img src="images/icon-avatar.png" alt=""></div>
+                        <div class="">
+                            <p class="pt-5 pb-5">
+                                “Job well done! I am really impressed. He is very very good at what he does:) I would recommend Sagar and will rehire in the future for Frontend development.”
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="sm:text-2xl font-bold">John Doe</h1>
+                            <p class="">Founder - xyz.com</p>
+                        </div>
+                    </div>
+                    <!-- card-2 -->
+                    <div class="dark:bg-slate-800  dark:border-0 flex flex-col justify-evenly w-[90%] m-auto md:mt-5 md:mb-5 lg:mt-0 lg:mb-0 sm:mt-5 sm:mb-5  md:w-[90%] lg:w-[30%] lg:m-auto mt-5 mb-5 sm:col-span-12 border border-white bg-white rounded-md shadow-lg p-10 h-[100%]">
+                        <div class="flex justify-center"><img src="images/icon-avatar.png" alt=""></div>
+                        <div class="">
+                            <p class="pt-5 pb-5">
+                                “Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.”
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="sm:text-2xl font-bold">John Doe</h1>
+                            <p class="">Founder - abc.com</p>
+                        </div>
+                    </div>
+                    <!-- card-3  -->
+                    <div class="dark:bg-slate-800 dark:border-0 flex flex-col justify-evenly w-[90%] m-auto md:w-[90%] lg:w-[30%] lg:m-auto sm:col-span-12 border border-white bg-white rounded-md shadow-lg p-10 h-[100%]">
+                        <div class="flex justify-center"><img src="images/icon-avatar.png" alt=""></div>
+                        <div class="">
+                            <p class="pt-5 pb-5">
+                                “Sagar was extremely easy and pleasant to work with and he truly cares about the project being a success. Sagar has a high level of knowledge and was able to work on my MERN stack application without any issues.”
+                            </p>
+                        </div>
+                        <div class="text-center">
+                            <h1 class="sm:text-2xl font-bold">John Doe</h1>
+                            <p class="">Freelancer</p>
+                        </div>
+                    </div>
+                 </div>
+          </div>
+        </div>
+      <!-- our testimonial section ends here  -->
+
+      <!-- our contact section goes here  -->
+      <div class="pb-20 pt-20">
+          <div class="grid justify-center grid-cols-1 sm:grid-cols-12">
+                <div class="sm:col-span-12 sm:text-center">
+                    <p class="dark:bg-slate-500 w-[25%] m-auto sm:w-[20%] sm:m-auto md:w-[10%] text-center md:m-auto rounded-lg bg-[#D1D5DB]">Get in touch</p>
+                    <p class="pt-3 pb-10 w-[90%] m-auto sm:w-[33%] sm:m-auto">
+                        What’s next? Feel free to reach out to me if you're looking for a
+                        developer, have a query, or simply want to connect.
+                    </p>
+                </div>
+                <div class="sm:col-span-12">
+                    <div class=" flex justify-center items-center">
+                        <img  src="images/Icon.png" alt="">
+                        <p class="sm:text-2xl mx-4 sm:mx-4 font-bold">reachsaddam@gmail.com</p>
+                        <img src="images/Icon Button.png" alt="">
+                    </div>
+                    <div class="flex justify-center sm:mb-8">
+                        <img src="images/phone.png" alt="">
+                        <p class="sm:text-2xl mx-4 sm:mx-4 font-bold">+918980500565</p>
+                        <img src="images/Icon Button.png" alt="">
+                    </div>
+                </div>
+                <div class="sm:col-span-12 flex flex-col justify-center items-center">
+                    <p class="mt-5 sm:mt-0">You may also find me on these platforms!</p>
+                    <div class="flex">
+                        <img src="images/Icon 1.png" alt="">
+                        <img src="images/Icon 2.png" alt="">
+                        <img src="images/Icon 3.png" alt="">
+                    </div>
+                </div>
+          </div>
+      </div>
+      <!-- our contact section ends here  -->
+
+      <!-- our footer section goes here  -->
+      <footer class="p-5 bg-[#F9FAFB] grid grid-cols-1 sm:grid-cols-12 dark:bg-slate-900">
+        <p class="col-span-12 text-center">&#169; 2023 | Designed and coded with ❤️️ by Saddam hussain</p>
+      </footer>
+      <!-- our footer section goes here  -->
+    </div>
+    <!-- our main container ends here  -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
